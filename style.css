@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 .Header {
     position: absolute;
     top: 0px;
@@ -22,12 +29,13 @@
     display: inline-block;  
     cursor: pointer;
     height: 33px;
-    margin-top: 15px;  
+    margin-top: 35px;  
   }
   .nav-bar-text {
     color: white;
     font-size: 25px;
     display: inline-block;
+    user-select: none;
   }
   .nav-block:hover .nav-bar-text{    
     animation: nav-text-color 0.5s;
@@ -36,4 +44,24 @@
   @keyframes nav-text-color {
     from {color:white; }
     to {color: orange; transform: translateY(-10px);}
+  }
+  #IIT-text {
+  display: inline-block; 
+  position: absolute; 
+  left: 200px; 
+  top: 50%;;
+  font-size: 25px;
+  color: white;
+  cursor: default;
+  user-select: none;
+  }
+  #BOAA-text {
+    display: inline-block; 
+    position: absolute; 
+    left:200px; 
+    top:20%;
+    font-size: 25px;
+    color: white;
+    cursor: default;
+    user-select: none;
   }
