@@ -1,0 +1,39 @@
+.Header {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width:100%;
+    position: fixed;
+    height: 100px;
+    background-color: rgb(49, 48, 48, 0.5);
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-block {
+    display: inline-block;  
+    cursor: pointer;
+    height: 33px;
+    margin-top: 15px;  
+  }
+  .nav-bar-text {
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+  }
+  .nav-block:hover .nav-bar-text{    
+    animation: nav-text-color 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes nav-text-color {
+    from {color:white; }
+    to {color: orange; transform: translateY(-10px);}
+  }
