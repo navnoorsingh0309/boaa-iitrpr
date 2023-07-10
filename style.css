@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Coiny");
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
 
 * {
     margin: 0;
@@ -11,8 +13,10 @@
     left: 0;
     width:100%;
     position: fixed;
-    height: 100px;
-    background-color: rgb(49, 48, 48, 0.5);
+    height: 70px;
+    background-color: rgb(49, 48, 48, 0.8);
+    backdrop-filter: blur(6px);
+    z-index: 1;
 }
 
 .navbar {
@@ -20,20 +24,21 @@
     justify-content: space-around;
     position: absolute;
     right: 0px;
-    width: 60%;
+    width: 550px;
     height: 100%;
     text-align: center;
+    z-index: 1;
 }
 
 .nav-block {
     display: inline-block;  
     cursor: pointer;
     height: 33px;
-    margin-top: 35px;  
+    margin-top: 25px;  
   }
   .nav-bar-text {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     user-select: none;
   }
@@ -48,9 +53,11 @@
   #IIT-text {
   display: inline-block; 
   position: absolute; 
-  left: 200px; 
-  top: 50%;;
-  font-size: 25px;
+  left: 120px; 
+  top: 60%;;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   color: white;
   cursor: default;
   user-select: none;
@@ -58,10 +65,155 @@
   #BOAA-text {
     display: inline-block; 
     position: absolute; 
-    left:200px; 
+    left:120px; 
+    font-family: Arial, Helvetica, sans-serif;
     top:20%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     cursor: default;
     user-select: none;
   }
+
+  #Logo {
+    border-radius: 50%;
+    margin-left: 50px;
+    height: 90%;
+    box-shadow: inset 0 3px 6px white, 0 4px 6px white;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+
+  /*Menu Icon*/
+  .menu {    
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width:50px;
+    height:50px;
+    background-color: red;
+    display: none;
+    cursor: pointer;
+  }
+  .menu div {
+    border-radius: 10px;
+    background-color: white;
+    height: 7px;
+    margin-top: 7px;
+  }
+  #menu_1 {
+    width: 50%;
+  }
+  #menu_2 {
+    width: 100%;
+  }
+  #menu_3 {
+    width: 75%;
+  }
+  @media only screen and (max-width:1000px) {
+      .navbar {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+      
+  }
+
+  /*Message_Section*/
+  .Main_Body {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 15%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .Messages_Section {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Message_Head {
+    color:black;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: transparent;
+  }
+  .Message_Text {
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  }
+  .bullets {
+    color: black;
+    background-color:transparent;
+    margin-left: 150px;
+    margin-right: 100px;
+    text-align: justify;
+  }
+  @media only screen and (max-width:700px) {
+      .Message_Head {
+        font-size: 25px;
+      }
+      .bullets {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      #Logo {
+        margin-left: 10px;
+      }
+      #IIT-text {
+        top: 50%;
+        left: 90px;
+        font-size: 12px;;
+      }
+      #BOAA-text {
+        top: 25%;
+        left:90px;
+        font-size: 12px;
+      }
+      .menu {
+        right: 10px;
+      }
+  }
+
+  /*Drop-Down Mobile Menu*/
+  .drop_down_menu {
+    background-color: #374E59;
+    width:100%;
+    top: 70px;
+    font-size: 25px;;
+    font-family: 'Sen';
+    color:white;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  .drop_down_menu li {
+    font-size: 25px;;
+    font-family: 'Sen';
+    color:white;
+    text-decoration: none;
+  }
+  .drop_down_menu li:hover {
+    background-color: #2980b9;
+  }
+  @keyframes drop_down_animation {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
