@@ -3,108 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Header.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery.js"></script>
     <script src="script.js"></script>
+    <script src="Header.js"></script>
+    <script>
+      $(function() {
+        $('#Header_div').load("Header.html");
+      });
+    </script>
     <title>Board of Academic Affairs, Indian Institute of Technology, Ropar</title>
 </head>
 <body>
-    <div class="Header">
-      <img src="boaa.png" id="Logo">
-        <h1 id="BOAA-text">Board of Academic Affairs</h1>
-        <h1 id="IIT-text">IIT Ropar</h1>
-        <!--Nav bar full computer screen-->
-        <nav class="navbar">
-            <div class="home nav-block">          
-                <h2 class="nav-bar-text">Home</h2>        
-            </div>
-            <div class="gallery nav-block">
-              <h2 class="nav-bar-text">Gallery</h2>
-            </div>
-            <div class="leadership-summit nav-block">
-              <a  href="https://www.iitrpr.ac.in/iitrpr-conclave/" target="_blank">
-                <h2 class="nav-bar-text">Leadership Summit</h2>
-              </a>
-            </div>
-            <div class="calander nav-block">
-              <h2 class="nav-bar-text">Calander</h2>          
-            </div>
-            <div class="team nav-block">
-              <h2 class="nav-bar-text">Team</h2>          
-            </div>
-        </nav>
-        <!--Mobile Menu-->
-        <ul class="drop_down_menu" id="Menu_block">
-          <li class="item-1">Home</li>
-          <li class="item-2">Gallery</li>
-          <a  href="https://www.iitrpr.ac.in/iitrpr-conclave/" target="_blank"><li class="item-3">Leadership Summit</li></a>
-          <li class="item-4">Calender</li>
-          <li class="item-5">Team</li>
-        </ul>
-        <div onclick="menuClick()" class="menu" id="navbarMenu">
-          <div id="menu_1"></div>
-          <div id="menu_2"></div>
-          <div id="menu_3"></div>
-        </div>
+    <div id="Header_div"></div>
+    <!--SlideShow-->
+    <div class="Slideshow">
+      <div class="Slideshow_Slides fade">
+        <img src="Leadership Summit/1.jpg" style="width: 100%">
+        <div class="Slide_Caption">Caption 1</div>
+      </div>
+      <div class="Slideshow_Slides fade">
+        <img src="Leadership Summit/2.jpg" style="width: 100%">
+        <div class="Slide_Caption">Caption 2</div>
+      </div>
+      <div class="Slideshow_Slides fade">
+        <img src="Leadership Summit/3.jpg" style="width: 100%">
+        <div class="Slide_Caption">Caption 3</div>
+      </div>
+      <div class="Slideshow_Slides fade">
+        <img src="Leadership Summit/4.jpg" style="width: 100%">
+        <div class="Slide_Caption">Caption 4</div>
+      </div>
+      <a class="prev_Slide" onclick="Slides(-1)">❮</a>
+      <a class="next_Slide" onclick="Slides(1)">❯</a>
     </div>
     <div class="Main_Body">
-      <div class="Messages_Section" id="About_Acad_Affairs">
-        <H1 class="Message_Head">About Academic Affairs Council</H1>
-        <p class="Message_Text">The Board of Academic Affairs is a committee of faculty members and student
-           representatives that oversees the academic policies and programs of the college. The board is 
-           responsible for ensuring the quality and relevance of the curriculum, approving new courses
-            and majors, reviewing student academic performance, and addressing academic issues and concerns.
-             The board also supports the professional development of faculty and fosters a culture of academic 
-             excellence and innovation. The Board of Academic Affairs helps the students life and over institution
-              college life by providing them with opportunities to pursue their academic interests, enhance their
-               skills and knowledge, and achieve their educational goals.</p>
+      <div class="Messages_Section">
+        <div class="Message_Text_Section" id="About_Acad_Affairs">
+          <H1 class="Message_Head" id="Acad_Head">About Academic Affairs Council</H1>
+          <p class="Message_Text" id="Acad_Text">The Board of Academic Affairs is a committee of faculty members and student
+            representatives that oversees the academic policies and programs of the college. The board is 
+            responsible for ensuring the quality and relevance of the curriculum, approving new courses
+              and majors, reviewing student academic performance, and addressing academic issues and concerns.
+              The board also supports the professional development of faculty and fosters a culture of academic 
+              excellence and innovation. The Board of Academic Affairs helps the students life and over institution
+                college life by providing them with opportunities to pursue their academic interests, enhance their
+                skills and knowledge, and achieve their educational goals.</p>
+        </div>
       </div>
-      <div class="Messages_Section" id="BOAA_Message">
-        <H1 class="Message_Head">Message from General Secretary BOAA
-        </H1>
-        <p class="Message_Text">Transitioning from school to college can be a daunting experience for many 
-          students. You may feel anxious about the academic expectations, the unfamiliar environment, and the
-           new challenges that await you. However, you should not let these fears stop you from exploring the
-            vast ocean of knowledge and opportunities that college offers. College is a place where you can
-             discover your passions, develop your skills, and expand your horizons. You can learn from diverse
-              perspectives, engage in meaningful activities, and make lifelong friends. College is not only a
-               place to study, but also a place to grow as a person. Therefore, do not let fear or anxiety 
-               hold you back from embracing this new phase of your life. Instead, approach it with curiosity,
-                enthusiasm, and optimism. Remember that you are not alone in this journey, and that there are
-                 many resources and support systems available to help you along the way. College is what you
-                  make of it, so make the most of it!
-        </p>
+      <div class="Messages_Section">
+        <div class="Message_Text_Section"  id="BOAA_Message">
+          <H1 class="Message_Head" id="BOAA_Head">Message from General Secretary BOAA
+          </H1>
+          <p class="Message_Text">Transitioning from school to college can be a daunting experience for many 
+            students. You may feel anxious about the academic expectations, the unfamiliar environment, and the
+            new challenges that await you. However, you should not let these fears stop you from exploring the
+              vast ocean of knowledge and opportunities that college offers. College is a place where you can
+              discover your passions, develop your skills, and expand your horizons. You can learn from diverse
+                perspectives, engage in meaningful activities, and make lifelong friends. College is not only a
+                place to study, but also a place to grow as a person. Therefore, do not let fear or anxiety 
+                hold you back from embracing this new phase of your life. Instead, approach it with curiosity,
+                  enthusiasm, and optimism. Remember that you are not alone in this journey, and that there are
+                  many resources and support systems available to help you along the way. College is what you
+                    make of it, so make the most of it!
+          </p>
+        </div>  
       </div>
       <div class="Messages_Section" id="Leadership_Summit">
-        <H1 class="Message_Head">Leadership Summit
-        </H1>
-        <p class="Message_Text">The Leadership Summit is an annual event hosted by IIT Ropar to address 
-          some of the major challenges and opportunities in the engineering field. The summit brings 
-          together students, faculty, alumni, industry experts and policymakers to exchange ideas, share
-           experiences and collaborate on solutions.. The main objectives of the last leadership summit were:<br><br></p>
-           <div class="bullets"><p style="font-size:20px;">&#x2022;Strengthen the bond between undergraduate (UG) and postgraduate (PG) students by 
-           facilitating mentorship, guidance and interdisciplinary projects.<br></p>
-            <p style="font-size:20px;">&#x2022;Promote the core industry and its benefits to the students and employers by highlighting 
-           the opportunities, incentives and facilities available in this sector.<br></p>
-           <p style="font-size:20px;">&#x2022;Re-establish the culture of innovation, creativity and leadership among the students and 
-           faculty by providing a platform for showcasing their achievements and initiatives.</p></div><br>
-           <p class="Message_Text">The summit aims to create not just engineers, but future leaders of our nation
-        </p>
+        <div class="Message_Text_Section">
+          <H1 class="Message_Head">Leadership Summit
+          </H1>
+          <p class="Message_Text" id="Leadership_Summit_Text">The Leadership Summit is an annual event hosted by IIT Ropar to address 
+            some of the major challenges and opportunities in the engineering field. The summit brings 
+            together students, faculty, alumni, industry experts and policymakers to exchange ideas, share
+            experiences and collaborate on solutions.. The main objectives of the last leadership summit were:<br><br></p>
+            <div class="bullets"><p style="font-size:20px;" id="bullets_text">&#x2022;Strengthen the bond between undergraduate (UG) and postgraduate (PG) students by 
+            facilitating mentorship, guidance and interdisciplinary projects.<br></p>
+              <p style="font-size:20px;" id="bullets_text">&#x2022;Promote the core industry and its benefits to the students and employers by highlighting 
+            the opportunities, incentives and facilities available in this sector.<br></p>
+            <p style="font-size:20px;" id="bullets_text">&#x2022;Re-establish the culture of innovation, creativity and leadership among the students and 
+            faculty by providing a platform for showcasing their achievements and initiatives.</p></div><br>
+            <p class="Message_Text" id="Leadership_Summit_Closing_Text">The summit aims to create not just engineers, but future leaders of our nation
+          </p>
+        </div>
+        <div class="Message_Images" id="Leadership_Summit_Images">
+          <img src="Leadership Summit/1.jpg" id="Msg_Img_1">
+          <img src="Leadership Summit/2.jpg" id="Msg_Img_2">
+          <img src="Leadership Summit/3.jpg" id="Msg_Img_3">
+          <img src="Leadership Summit/4.jpg" id="Msg_Img_4">
+        </div>
       </div>
-      <div class="Messages_Section" id="BOAA_Message">
-        <H1 class="Message_Head">Convocation
-        </H1>
-        <p class="Message_Text">The convocation is an annual event where the students of IIT Ropar receive
-           their degrees and medals from the chief guest, the director and the chairman of the institute. 
-           It is a celebration of their academic achievements and a farewell to their alma mater. The 
-           convocation also showcases the research and innovation of the institute and its impact on the 
-           society and the nation. The convocation is a memorable and proud moment for the students who 
-           have worked hard and excelled in their studies and research. It is also an opportunity for them
-            to express their gratitude to their mentors, family and friends who have supported them throughout 
-            their journey. The convocation inspires them to pursue their dreams and goals with passion, 
-            integrity and excellence.
+      <div class="Messages_Section">
+        <div class="Message_Text_Section" id="Convo_Section">
+          <H1 class="Message_Head">Convocation
+          </H1>
+          <p class="Message_Text">The convocation is an annual event where the students of IIT Ropar receive
+            their degrees and medals from the chief guest, the director and the chairman of the institute. 
+            It is a celebration of their academic achievements and a farewell to their alma mater. The 
+            convocation also showcases the research and innovation of the institute and its impact on the 
+            society and the nation. The convocation is a memorable and proud moment for the students who 
+            have worked hard and excelled in their studies and research. It is also an opportunity for them
+              to express their gratitude to their mentors, family and friends who have supported them throughout 
+              their journey. The convocation inspires them to pursue their dreams and goals with passion, 
+              integrity and excellence.
 
-        </p>
+          </p>
+        </div>
       </div>
     </div>
+    <script>
+      //Slideshow
+      var slideIndex = 1;
+      showSlideNumber(slideIndex);
+      function Slides(n) {
+          showSlideNumber(slideIndex += n);
+      }
+      function showSlideNumber(n) {
+          var slides = document.getElementsByClassName("Slideshow_Slides");
+          if(n>slides.length)
+          {
+            slideIndex = 1;
+          }        
+          else if(n<1)
+          {
+            slideIndex = slides.length;
+          }
+          for(var i=0;i<slides.length;i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(AutomaticChanging, 5000);
+      }
+      function AutomaticChanging() {
+        showSlideNumber(slideIndex += 1);
+      }
+    </script>
 </body>
 </html>
