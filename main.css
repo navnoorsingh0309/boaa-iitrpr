@@ -15,6 +15,9 @@
   .Slideshow_Slides {
     display: none;
   }
+  .Slide_Images {
+    height: 800px;;
+  }
   .prev_Slide, .next_Slide {
     cursor: pointer;
     position: absolute;
@@ -85,6 +88,9 @@
     margin-bottom: 40px;
     width: 100%;
   }
+  #About_Acad_Affairs_Section {
+    scale: 1;
+  }
   #Acad_Head {
     margin-bottom: 10px;
   }
@@ -97,9 +103,6 @@
   #BOAA_Message {
     width: 90%;
   }
-#About_Acad_Affairs_Section {
-    scale:1;
-}
   #Convo_Section {
     width: 90%;
   }
@@ -124,23 +127,38 @@
     width: 90%;
   }
   .Message_Images {
-    margin-top: 100px;
+    margin-top: 150px;
     display: inline-block;
-    width: 50%;
+    width: 38%;
   }
   #Msg_Img_1 {
-    width: 45%;
+    width: 230px;
+    height: 130px;
+    margin:5px;
   }
   #Msg_Img_2 {
-    width: 45%;
+    width: 230px;
+    height: 130px;
+    margin: 5px;
   }
   #Msg_Img_3 {
-    width: 45%;
+    width: 230px;
+    height: 130px;;
+    margin: 5px;
   }
   #Msg_Img_4 {
-    width: 45%;
+    width: 230px;
+    height: 130px;
+    margin: 5px;
+  }
+  #Img_Col_1 {
+    display: flex;
+    justify-content: space-around;
   } 
-
+  #Img_Col_2 {
+    display: flex;
+    justify-content: space-around;
+  }
   /*Drop-Down Mobile Menu*/
   .drop_down_menu {
     background-color: #374E59;
@@ -173,6 +191,27 @@
         transform: rotateX(0deg) 
     }
 }
+
+@media only screen and (max-width:1000px) {
+  
+  .bullets {
+    width: 100%;
+  }
+  .Messages_Section {
+    display: block;
+    text-align: center;
+  }
+  .Message_Text_Section {
+    width: 90%;
+  }
+  .Message_Images {
+    margin-top: 10px;
+    width: 470px;;
+  }
+  .Slide_Images {
+    height: 500px;
+  }
+}
 @media only screen and (max-width:700px) {
   .Message_Head {
     font-size: 20px;
@@ -199,31 +238,31 @@
   .menu {
     right: 10px;
   }
+  .Slide_Images {
+    height: 300px;;
+  }
   #Msg_Img_1 {
-    width: 40%;
-  }
-  #Msg_Img_2 {
-    width: 40%;
-  }
-  #Msg_Img_3 {
-    width: 40%;
-  }
-  #Msg_Img_4 {
-    width: 40%;
-  }
-}
-@media only screen and (max-width:1000px) {
-  
-  .bullets {
-    width: 100%;
-  }
-  .Messages_Section {
-    display: block;
-  }
-  .Message_Text_Section {
-    width: 90%;
+    width: 50%;
+    height: auto;
+    margin:5px;
   }
   .Message_Images {
-    width: 100%;
+    width: 80%;
+    margin-top: 10px;
   }
+  #Msg_Img_2 {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+  }
+  #Msg_Img_3 {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+  }
+  #Msg_Img_4 {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+  } 
 }
