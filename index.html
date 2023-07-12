@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Header.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery.js"></script>
     <script src="script.js"></script>
     <script src="Header.js"></script>
@@ -20,19 +20,19 @@
     <!--SlideShow-->
     <div class="Slideshow">
       <div class="Slideshow_Slides fade">
-        <img src="Leadership Summit/1.jpg" style="width: 100%">
+        <img src="Leadership Summit/1.jpg" style="width: 100%;" class="Slide_Images">
         <div class="Slide_Caption">Caption 1</div>
       </div>
       <div class="Slideshow_Slides fade">
-        <img src="Leadership Summit/2.jpg" style="width: 100%">
+        <img src="Leadership Summit/2.jpg" style="width: 100%;" class="Slide_Images">
         <div class="Slide_Caption">Caption 2</div>
       </div>
       <div class="Slideshow_Slides fade">
-        <img src="Leadership Summit/3.jpg" style="width: 100%">
+        <img src="Leadership Summit/3.jpg" style="width: 100%;" class="Slide_Images">
         <div class="Slide_Caption">Caption 3</div>
       </div>
       <div class="Slideshow_Slides fade">
-        <img src="Leadership Summit/4.jpg" style="width: 100%">
+        <img src="Leadership Summit/4.jpg" style="width: 100%;" class="Slide_Images">
         <div class="Slide_Caption">Caption 4</div>
       </div>
       <a class="prev_Slide" onclick="Slides(-1)">❮</a>
@@ -88,10 +88,14 @@
           </p>
         </div>
         <div class="Message_Images" id="Leadership_Summit_Images">
-          <img src="Leadership Summit/1.jpg" id="Msg_Img_1">
-          <img src="Leadership Summit/2.jpg" id="Msg_Img_2">
-          <img src="Leadership Summit/3.jpg" id="Msg_Img_3">
-          <img src="Leadership Summit/4.jpg" id="Msg_Img_4">
+          <div id="Img_Col_1">
+            <img src="Leadership Summit/1.jpg" id="Msg_Img_1">
+            <img src="Leadership Summit/2.jpg" id="Msg_Img_2">
+          </div>
+          <div id="Img_Col_2">
+            <img src="Leadership Summit/3.jpg" id="Msg_Img_3">
+            <img src="Leadership Summit/4.jpg" id="Msg_Img_4">
+          </div>
         </div>
       </div>
       <div class="Messages_Section">
@@ -114,7 +118,7 @@
     </div>
     <script>
       //Slideshow
-      var slideIndex = 1;
+      var slideIndex = 1, timeOut;
       showSlideNumber(slideIndex);
       function Slides(n) {
           showSlideNumber(slideIndex += n);
@@ -133,7 +137,8 @@
               slides[i].style.display = "none";
           }
           slides[slideIndex-1].style.display = "block";
-          setTimeout(AutomaticChanging, 5000);
+          clearTimeout(timeOut);
+          timeOut = setTimeout(AutomaticChanging, 5000);
       }
       function AutomaticChanging() {
         showSlideNumber(slideIndex += 1);
