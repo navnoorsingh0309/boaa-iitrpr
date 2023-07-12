@@ -6,124 +6,56 @@
     margin: 0;
     padding: 0;
   }
+ 
 
-.Header {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width:100%;
-    position: fixed;
-    height: 70px;
-    background-color: rgb(49, 48, 48, 0.8);
-    backdrop-filter: blur(6px);
-    z-index: 1;
-}
-
-.navbar {
-    display: inline-flex;
-    justify-content: space-around;
-    position: absolute;
-    right: 0px;
-    width: 550px;
-    height: 100%;
-    text-align: center;
-    z-index: 1;
-}
-
-.nav-block {
-    display: inline-block;  
-    cursor: pointer;
-    height: 33px;
-    margin-top: 25px;  
+  /*Slide Show*/
+  .Slideshow {
+    position: relative;
   }
-  .nav-bar-text {
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-    user-select: none;
-  }
-  .nav-block:hover .nav-bar-text{    
-    animation: nav-text-color 0.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes nav-text-color {
-    from {color:white; }
-    to {color: orange; transform: translateY(-10px);}
-  }
-  #IIT-text {
-  display: inline-block; 
-  position: absolute; 
-  left: 120px; 
-  top: 60%;;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: white;
-  cursor: default;
-  user-select: none;
-  }
-  #BOAA-text {
-    display: inline-block; 
-    position: absolute; 
-    left:120px; 
-    font-family: Arial, Helvetica, sans-serif;
-    top:20%;
-    font-size: 20px;
-    color: white;
-    cursor: default;
-    user-select: none;
-  }
-
-  #Logo {
-    border-radius: 50%;
-    margin-left: 50px;
-    height: 90%;
-    box-shadow: inset 0 3px 6px white, 0 4px 6px white;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  
-
-  /*Menu Icon*/
-  .menu {    
-    display: inline-block;
-    position: absolute;
-    right: 50px;
-    top: 10px;
-    width:50px;
-    height:50px;
-    background-color: red;
+  .Slideshow_Slides {
     display: none;
+  }
+  .prev_Slide, .next_Slide {
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  .menu div {
-    border-radius: 10px;
-    background-color: white;
-    height: 7px;
-    margin-top: 7px;
-  }
-  #menu_1 {
-    width: 50%;
-  }
-  #menu_2 {
-    width: 100%;
-  }
-  #menu_3 {
-    width: 75%;
-  }
-  @media only screen and (max-width:1000px) {
-      .navbar {
-        display: none;
-      }
-      .menu {
-        display: block;
-      }
-      
-  }
+  /* Position the "next button" to the right */
+.next_Slide {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Caption text */
+.Slide_Caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
   /*Message_Section*/
   .Main_Body {
-    position: absolute;
     padding: 0;
     margin: 0;
     top: 15%;
@@ -131,59 +63,80 @@
     width: 100%;
     height: 100%;
     z-index: 0;
+    
   }
   .Messages_Section {
-    width: 100%;
     text-align: center;
     margin-top: 70px;
     font-family: Arial, Helvetica, sans-serif;
+    scale: 0.5;
+    transition: all 1s;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Messages_Section.visible {
+    scale: 1;
   }
   .Message_Head {
     color:black;
     margin-top: 20px;
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  #Acad_Head {
+    margin-bottom: 10px;
+  }
+  #BOAA_Head {
+    margin-bottom: 10px;
+  }
+  #About_Acad_Affairs {
+    width: 90%;
+  }
+  #BOAA_Message {
+    width: 90%;
+  }
+  #Convo_Section {
+    width: 90%;
+  }
+  .Message_Text_Section {
+    width: 50%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: transparent;
   }
   .Message_Text {
     color: rgb(61, 61, 61);
     font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: justify;
+    width: 100%;
   }
   .bullets {
     color: black;
     background-color:transparent;
-    margin-left: 150px;
-    margin-right: 100px;
+    margin-left: 5%;
     text-align: justify;
   }
-  @media only screen and (max-width:700px) {
-      .Message_Head {
-        font-size: 25px;
-      }
-      .bullets {
-        margin-left: 50px;
-        margin-right: 50px;
-      }
-      #Logo {
-        margin-left: 10px;
-      }
-      #IIT-text {
-        top: 50%;
-        left: 90px;
-        font-size: 12px;;
-      }
-      #BOAA-text {
-        top: 25%;
-        left:90px;
-        font-size: 12px;
-      }
-      .menu {
-        right: 10px;
-      }
+  #bullets_text {
+    width: 90%;
   }
+  .Message_Images {
+    margin-top: 100px;
+    display: inline-block;
+    width: 50%;
+  }
+  #Msg_Img_1 {
+    width: 45%;
+  }
+  #Msg_Img_2 {
+    width: 45%;
+  }
+  #Msg_Img_3 {
+    width: 45%;
+  }
+  #Msg_Img_4 {
+    width: 45%;
+  } 
 
   /*Drop-Down Mobile Menu*/
   .drop_down_menu {
@@ -216,4 +169,58 @@
     100% {
         transform: rotateX(0deg) 
     }
+}
+@media only screen and (max-width:700px) {
+  .Message_Head {
+    font-size: 20px;
+  }
+  .bullets_text {
+    margin-left: 50px;
+  }
+  #Logo {
+    margin-left: 10px;
+  }
+  #IIT-text {
+    top: 50%;
+    left: 90px;
+    font-size: 12px;;
+  }
+  #BOAA-text {
+    top: 25%;
+    left:90px;
+    font-size: 12px;
+  }
+  .Message_Head {
+    margin-bottom: 10px;
+  }
+  .menu {
+    right: 10px;
+  }
+  #Msg_Img_1 {
+    width: 40%;
+  }
+  #Msg_Img_2 {
+    width: 40%;
+  }
+  #Msg_Img_3 {
+    width: 40%;
+  }
+  #Msg_Img_4 {
+    width: 40%;
+  }
+}
+@media only screen and (max-width:1000px) {
+  
+  .bullets {
+    width: 100%;
+  }
+  .Messages_Section {
+    display: block;
+  }
+  .Message_Text_Section {
+    width: 90%;
+  }
+  .Message_Images {
+    width: 100%;
+  }
 }
