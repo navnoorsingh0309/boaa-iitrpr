@@ -14,7 +14,7 @@ function menuClick() {
         bar_two.style.transform = "rotateZ(-45deg)";
         bar_three.style.transform = "rotateZ(45deg) translate(0px, -15.5px)";
         menuBlock.style.animation = "drop_down_animation 1s ease-in-out";
-        menuBlock.style.display ="block";
+        menuBlock.style.animationFillMode = "forwards";
         menu = 1;
     }
     else
@@ -22,7 +22,7 @@ function menuClick() {
         bar_one.style.transform = "rotateZ(0deg) translate(0px, 0px)";
         bar_two.style.transform = "rotateZ(0deg)";
         bar_three.style.transform = "rotateZ(0deg) translate(0px, 0px)";
-        menuBlock.style.display = "none";
+        menuBlock.style.animation = "drop_down_animation_out 1s ease-in-out";
         menu = 0;
     }
 }
