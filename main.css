@@ -47,7 +47,7 @@
   text-align: center;
 }
 /* Fading animation */
-.fade {
+.fade_Slides {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -127,9 +127,10 @@
     width: 90%;
   }
   .Message_Images {
-    margin-top: 150px;
+    margin-top: 200px;
     display: inline-block;
     width: 38%;
+    margin-right: 40px;
   }
   #Msg_Img_1 {
     width: 230px;
@@ -159,38 +160,9 @@
     display: flex;
     justify-content: space-around;
   }
-  /*Drop-Down Mobile Menu*/
-  .drop_down_menu {
-    background-color: #374E59;
-    width:100%;
-    top: 70px;
-    font-size: 25px;;
-    font-family: 'Sen';
-    color:white;
-    display: none;
-    text-align: center;
-    cursor: pointer;
-  }
-  .drop_down_menu li {
-    font-size: 25px;;
-    font-family: 'Sen';
-    color:white;
-    text-decoration: none;
-  }
-  .drop_down_menu li:hover {
-    background-color: #2980b9;
-  }
-  @keyframes drop_down_animation {
-    0% {
-        transform: rotateX(-90deg)
-    }
-    70% {
-        transform: rotateX(20deg) 
-    }
-    100% {
-        transform: rotateX(0deg) 
-    }
-}
+  #Footer_div {
+    width: 100%;
+  } 
 
 @media only screen and (max-width:1000px) {
   
@@ -207,6 +179,7 @@
   .Message_Images {
     margin-top: 10px;
     width: 470px;;
+    margin-right: 0px;
   }
   .Slide_Images {
     height: 500px;
