@@ -1,84 +1,134 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-.Header {
+.Header {  
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0;
-    width:100%;
     position: fixed;
+    width:100%;
     height: 70px;
     background-color: rgb(49, 48, 48, 0.8);
     backdrop-filter: blur(6px);
-    z-index: 1;
-}
-
-.navbar {
-    display: inline-flex;
-    justify-content: space-around;
-    position: absolute;
-    right: 0px;
-    width: 550px;
-    height: 100%;
-    text-align: center;
-    z-index: 1;
-}
-
-.nav-block {
-    display: inline-block;  
-    cursor: pointer;
-    height: 33px;
-    margin-top: 0px;  
-}
-  .nav-bar-text {
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-    user-select: none;
   }
-  .nav-block:hover .nav-bar-text{    
-    animation: nav-text-color 0.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes nav-text-color {
-    from {color:white; }
-    to {color: orange; transform: translateY(-10px);}
-  }
-  #IIT-text {
-  display: inline-block; 
-  position: absolute; 
-  left: 120px; 
-  top: 60%;;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: white;
-  cursor: default;
-  user-select: none;
-  }
-  #BOAA-text {
-    display: inline-block; 
-    position: absolute; 
-    left:120px; 
-    font-family: Arial, Helvetica, sans-serif;
-    top:20%;
-    font-size: 20px;
-    color: white;
-    cursor: default;
-    user-select: none;
-  }
-
   #Logo {
     border-radius: 50%;
     margin-left: 50px;
     height: 90%;
-    box-shadow: inset 0 3px 6px white, 0 4px 6px white;
     transition: transform 1s;
     transform-style: preserve-3d;
   }
   
-
+  #IIT-text {
+    display: inline-block; 
+    position: absolute; 
+    left: 130px; 
+    top: 50%;;
+    font-size: 20px;
+    background: linear-gradient(
+            to right, red, #f15c5c, rgb(245, 108, 227), #556cf0, #062af7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+  }
+  @keyframes textShine {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  #typed-wrapper {
+    display: inline-block; 
+    position: absolute; 
+    left:130px; 
+    top:20%;
+    font-size: 20px;
+    color: red;
+  }
+  @keyframes typing {
+    0%, 96% { content: ""; }
+    2%, 94% { content: "A"; }
+    4%, 92% { content: "Ae"; }
+    6%, 90% { content: "Aer"; }
+    8%, 88% { content: "Aero"; }
+    10%, 86% { content: "Aerom"; }
+    12%, 84% { content: "Aeromo"; }
+    14%, 82% { content: "Aeromod"; }
+    16%, 80% { content: "Aeromode"; }
+    18%, 78% { content: "Aeromodel"; }
+    20%, 76% { content: "Aeromodell"; }
+    22%, 74% { content: "Aeromodelli"; }  
+    24%, 72% { content: "Aeromodellin"; }  
+    26%, 70% { content: "Aeromodelling"; }
+    28%, 68% { content: "Aeromodelling "; }
+    30%, 66% { content: "Aeromodelling C"; }
+    32%, 64% { content: "Aeromodelling Cl"; }
+    34%, 62% { content: "Aeromodelling Clu"; }
+    36%, 60% { content: "Aeromodelling Club"; }  
+  }
+  
+  
+  #typed::before {
+    content: "";  
+    animation: typing 7s infinite;
+  }
+  
+  .cursor {
+    display: inline-block;
+    background-color: #b0ff95;
+    animation: blinker 800ms infinite;
+  }
+  
+  .cursor.typing-true {
+    animation: none;
+  }
+  
+  @keyframes blinker {
+    0% { background-color: #00aeff; }
+    50% { background-color: transparent; }
+    100% { background-color: #00aeff; }
+  }
+  
+  .navbar {
+    display: inline-flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+  }
+  .nav-block {
+    display: inline-block;  
+    cursor: pointer;
+    height: 33px;
+    margin-top: 19px;  
+  }
+  .nav-bar-text {
+    color: white;
+    font-size: 23px;
+    display: inline-block;
+  }
+  .nav-block:hover .nav-bar-text{
+    animation: nav-text-color 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes nav-text-color {
+    from {color:white;}
+    to {color: orange;  transform: translateY(-10px);}
+  }
+  
+  .main_body {  
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index:4;
+  }
+  
+  
+  
   /*Menu Icon*/
   .menu {    
     display: inline-block;
@@ -90,6 +140,8 @@
     background-color: red;
     display: none;
     cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 8px 8px -4px lightblue;
   }
   .menu div {
     border-radius: 10px;
@@ -106,12 +158,11 @@
   #menu_3 {
     width: 75%;
   }
-  
-
-    /*Drop-Down Mobile Menu*/
+  /*Drop-Down Mobile Menu*/
   .drop_down_menu {
-    background-color: #374E59;
+    background-color: #00aeff;
     width:100%;
+    top: 70px;
     font-size: 25px;;
     font-family: 'Sen';
     color:white;
@@ -138,31 +189,49 @@
     100% {
         transform: rotateX(0deg) 
     }
-}
-@keyframes drop_down_animation_out {
-  100% {
-      transform: rotateX(-90deg)
   }
-  30% {
-      transform: rotateX(20deg) 
+  @keyframes drop_down_animation_out {
+    100% {
+        transform: rotateX(-90deg)
+    }
+    30% {
+        transform: rotateX(20deg) 
+    }
+    0% {
+        transform: rotateX(0deg) 
+    }
   }
-  0% {
-      transform: rotateX(0deg) 
+  @media screen and (min-width:1000px) {
+    .drop_down_menu {
+      display: none;
+    }
   }
-}
-@media screen and (min-width:1000px) {
-  .drop_down_menu {
-    display: none;
+  @media only screen and (max-width:1000px) {
+    .navbar {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+    .drop_down_menu {
+      display: block;
+    }
   }
-}
-@media only screen and (max-width:1000px) {
-  .navbar {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
-  .drop_down_menu {
-    display: block;
-  }
+  @media only screen and (max-width:700px) {
+    #Logo {
+      margin-left: 10px;
+    }
+    #IIT-text {
+      top: 50%;
+      left: 90px;
+      font-size: 12px;;
+    }
+    #typed-wrapper {
+      top: 25%;
+      left:90px;
+      font-size: 12px;
+    }
+    .menu {
+      right: 10px;
+    }
 }
