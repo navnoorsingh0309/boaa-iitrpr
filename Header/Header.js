@@ -22,7 +22,7 @@ function menuClick() {
         bar_one.style.transform = "rotateZ(0deg) translate(0px, 0px)";
         bar_two.style.transform = "rotateZ(0deg)";
         bar_three.style.transform = "rotateZ(0deg) translate(0px, 0px)";
-        menuBlock.style.animation = "drop_down_animation_out 1s ease-in-out";
+        menuBlock.style.animation = "drop_down_animation_out 0.5s ease-in-out";
         menu = 0;
     }
 }
