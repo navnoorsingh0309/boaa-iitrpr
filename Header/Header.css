@@ -43,7 +43,7 @@
   }
   @keyframes nav-text-color {
     from {color:white; }
-    to {color: orange; transform: translateY(-10px);}
+    to {color: orange; transform: translateY(-5px);}
   }
   #IIT-text {
   display: inline-block; 
