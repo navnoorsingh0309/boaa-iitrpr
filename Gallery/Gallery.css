@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Gallery_Head {
+    text-align: center;
+    margin-top: 80px;
+    text-decoration: underline;
+}
+.Gallery_Img {
+    transition: transform ease-in-out 0.5s;
+}
+.Gallery_Img:hover {
+    transform: scale(1.05)
+}
+#Footer_div {
+    position: relative;
+}
