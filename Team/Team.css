@@ -1,0 +1,44 @@
+.Team_Image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+p {
+    font-size: 20px;
+}
+.social {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.social li{
+display: inline-block;
+}
+.social li a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	color: #fff;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	border-radius: 30px;
+	margin: 3px;
+    text-decoration: none;
+}
+
+
+.linked-in{background: #1C58A1;}
+.linked-in:hover{background: #fff;color:#1C58A1!important;}
+.whatsapp{background: #25d366;}
+.whatsapp:hover{background: #fff;color:#25d366!important;}
+.mail{background: #F04537;}
+.mail:hover{background: #fff;color:#F04537!important;}
+.phone{background-color: black;}
+.phone:hover{background: #fff;color: #000!important;}
+
