@@ -1,3 +1,6 @@
+body {
+     overflow-y: hidden;
+ }
 .Main_Body_Calendar {
     padding: 0;
     margin: 0;
