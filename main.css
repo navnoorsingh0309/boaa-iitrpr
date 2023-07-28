@@ -162,7 +162,10 @@
   }
   #Footer_div {
     width: 100%;
-  } 
+  }
+  #Convocation_Images {
+    margin-top: 120px;
+  }
 
 @media only screen and (max-width:1000px) {
   
@@ -180,6 +183,9 @@
     margin-top: 10px;
     width: 470px;;
     margin-right: 0px;
+  }
+  #Convocation_Images {
+    margin-top: 10px;
   }
   .Slide_Images {
     height: 500px;
