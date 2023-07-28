@@ -15,8 +15,6 @@ function BubblyOut(n) {
     card[n].style.transform = "";
 }
 window.addEventListener("load", (event) => {
-    // PAGE IS FULLY LOADED  
-    // FADE OUT YOUR OVERLAYING DIV
-    alert("UY");
     $('#overlay').fadeOut();
+    document.getElementsByTagName("body")[0].style = "overflow-y: scroll;"
  });
