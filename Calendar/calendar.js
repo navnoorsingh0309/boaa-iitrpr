@@ -72,4 +72,7 @@ function Branch_Dropdown_Menu(n)
             break;
     }
 }
-
+window.addEventListener("load", (event) => {
+    $('#overlay').fadeOut();
+    document.getElementsByTagName("body")[0].style = "overflow-y: scroll;"
+ });
