@@ -32,6 +32,17 @@ display: inline-block;
     text-decoration: none;
 }
 
+.card-Team {
+	border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+	margin-left: 5px;
+	width: auto; margin: auto;
+	height: 500px;
+}
 
 .linked-in{background: #1C58A1;}
 .linked-in:hover{background: #fff;color:#1C58A1!important;}
