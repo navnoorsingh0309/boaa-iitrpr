@@ -14,3 +14,9 @@ function BubblyFunc(e, n) {
 function BubblyOut(n) {
     card[n].style.transform = "";
 }
+$(window).load(function(){
+    // PAGE IS FULLY LOADED  
+    // FADE OUT YOUR OVERLAYING DIV
+    alert("UY");
+    $('#overlay').fadeOut();
+ });
