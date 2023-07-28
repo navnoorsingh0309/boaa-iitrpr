@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="boaa.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Header/Header.css">
     <link rel="stylesheet" type="text/css" href="Footer/Footer.css">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <script src="jquery.js"></script>
     <script src="script.js"></script>
+    <script src="Team/Team.js"></script>
     <script src="Header/Header.js"></script>
     <script>
       $(function() {
@@ -23,7 +23,7 @@
         $('#Footer_div').load("Footer/Footer.html");
       });
     </script>
-    <title>Board of Academic Affairs, IIT Ropar - Team</title>
+    <title>Board of Academic Affairs, Indian Institute of Technology, Ropar</title>
 </head>
 <body>
     <div id="Header_div"></div>
@@ -31,15 +31,17 @@
         <h1 class="display-4">Aacademic Year 2023-24</h1>
         <div class="row justify-content-center">
             <div class="col my-4">
-                <img src="Team/Batch 2021/Prince Gupta.jpg" class="Team_Image">
-                <h3>Prince Gupta</h3>
-                <p>General Secretory of Academic Affairs</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team" style="width: 400px; margin: auto;"  onmousemove="BubblyFunc(event, 0)" onmouseout="BubblyOut(0)">
+                    <img src="Team/Batch 2021/Prince Gupta.jpg" class="Team_Image">
+                    <h3>Prince Gupta</h3>
+                    <p>General Secretory of Academic Affairs</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -50,357 +52,428 @@
     <div class="container text-center" style="margin-top: 70px;">
         <h1 class="display-4">Aacademic Year 2022-23</h1>
         <div class="row justify-content-center">
-            <div class="col my-4">
-                <img src="Team/Batch 2020/Prachi.jpg" class="Team_Image">
-                <h3>Prachi</h3>
-                <p>General Secretory of Academic Affairs</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+            <div class="col my-4  text-center">
+                <div class="card-Team" style="width: 400px; margin: auto;"  onmousemove="BubblyFunc(event, 1)" onmouseout="BubblyOut(1)">
+                    <img src="Team/Batch 2020/Prachi.jpg" class="Team_Image">
+                    <h3>Prachi</h3>
+                    <p>General Secretory of Academic Affairs</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>	
             </div>
         </div>
         <h1 class="display-5" style="margin-top: 50px;">Batch 2022</h1>
         <div class="row">
             <div class="col my-4">
+                <div class="card-Team" style="width: auto; margin: auto;"  onmousemove="BubblyFunc(event, 2)" onmouseout="BubblyOut(2)">
                 <img src="Team/Batch 2022/Ananya Sethi .png" class="Team_Image">
                 <h3>Ananya Sethi</h3>
                 <p>Computer Science and Engineering</p>
                 <ul class="social">
                     <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
+                    
                     <li><a href="#" class="fa fa-envelope mail"></a></li>
                     <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                </ul>
+            </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2022/Nimish Sehgal .jpg" class="Team_Image">
-                <h3>Nimish Sehgal</h3>
-                <p>Mathematics and Computing</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 3)" onmouseout="BubblyOut(3)">
+                    <img src="Team/Batch 2022/Nimish Sehgal .jpg" class="Team_Image">
+                    <h3>Nimish Sehgal</h3>
+                    <p>Mathematics and Computing</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2022/Keshav Gautam.jpg" class="Team_Image">
-                <h3>Keshav Gautam</h3>
-                <p>Electrical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 4)" onmouseout="BubblyOut(4)">
+                    <img src="Team/Batch 2022/Keshav Gautam.jpg" class="Team_Image">
+                    <h3>Keshav Gautam</h3>
+                    <p>Electrical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2022/Harjas Kaur .jpg" class="Team_Image">
-                <h3>Harjas Kaur</h3>
-                <p>Electrical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
-            </div>
-        </div>
-        <div class="row">
-            <div class="col my-4">
-                <img src="Team/Batch 2022/Amitoj Singh.jpg" class="Team_Image">
-                <h3>Amitoj</h3>
-                <p>Mechanical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
-            </div>
-            <div class="col my-4">
-                <img src="Team/Batch 2022/Aditi .jpg" class="Team_Image">
-                <h3>Aditi</h3>
-                <p>Mechanical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
-            </div>
-            <div class="col my-4">
-                <img src="Team/Batch 2022/Manavaditya .jpg" class="Team_Image">
-                <h3>Manavaditya</h3>
-                <p>Chemical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
-            </div>
-            <div class="col my-4">
-                <img src="Team/Batch 2022/Mayank Sharma.jpg" class="Team_Image">
-                <h3>Mayank Sharma</h3>
-                <p>Engineering Physics</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 5)" onmouseout="BubblyOut(5)">
+                    <img src="Team/Batch 2022/Harjas Kaur .jpg" class="Team_Image">
+                    <h3>Harjas Kaur</h3>
+                    <p>Electrical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>                
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2022/Kamran Mehdi.jpg" class="Team_Image">
-                <h3>Kamran Mehdi</h3>
-                <p>Metallury and Materials Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 6)" onmouseout="BubblyOut(6)">
+                    <img src="Team/Batch 2022/Amitoj Singh.jpg" class="Team_Image">
+                    <h3>Amitoj</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2022/Prerna Singh.jpg" class="Team_Image">
-                <h3>Prerna Singh</h3>
-                <p>Civil Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 7)" onmouseout="BubblyOut(7)">
+                    <img src="Team/Batch 2022/Aditi .jpg" class="Team_Image">
+                    <h3>Aditi</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>	
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 8)" onmouseout="BubblyOut(8)">
+                    <img src="Team/Batch 2022/Manavaditya .jpg" class="Team_Image">
+                    <h3>Manavaditya</h3>
+                    <p>Chemical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>	
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 9)" onmouseout="BubblyOut(9)">
+                    <img src="Team/Batch 2022/Mayank Sharma.jpg" class="Team_Image">
+                    <h3>Mayank Sharma</h3>
+                    <p>Engineering Physics</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 10)" onmouseout="BubblyOut(10)">
+                    <img src="Team/Batch 2022/Kamran Mehdi.jpg" class="Team_Image">
+                    <h3>Kamran Mehdi</h3>
+                    <p>Metallury and Materials Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 11)" onmouseout="BubblyOut(11)">
+                    <img src="Team/Batch 2022/Prerna Singh.jpg" class="Team_Image">
+                    <h3>Prerna Singh</h3>
+                    <p>Civil Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <h1 class="display-5" style="margin-top: 50px;">Batch 2021</h1>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2021/Harshit Gupta.jpg" class="Team_Image">
-                <h3>Harshit Gupta</h3>
-                <p>Computer Science and Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 12)" onmouseout="BubblyOut(12)">
+                    <img src="Team/Batch 2021/Harshit Gupta.jpg" class="Team_Image">
+                    <h3>Harshit Gupta</h3>
+                    <p>Computer Science and Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Naviket Mankoo.JPG" class="Team_Image">
-                <h3>Naviket Mankoo</h3>
-                <p>Mathematics and Computing</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 13)" onmouseout="BubblyOut(13)">
+                    <img src="Team/Batch 2021/Naviket Mankoo.JPG" class="Team_Image">
+                    <h3>Naviket Mankoo</h3>
+                    <p>Mathematics and Computing</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>	
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Manan Dangwal.jpg" class="Team_Image">
-                <h3>Manan Dangwal</h3>
-                <p>Electrical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 14)" onmouseout="BubblyOut(14)">
+                    <img src="Team/Batch 2021/Manan Dangwal.jpg" class="Team_Image">
+                    <h3>Manan Dangwal</h3>
+                    <p>Electrical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Umang Raj.jpg" class="Team_Image">
-                <h3>Umang Raj</h3>
-                <p>Mechanical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 15)" onmouseout="BubblyOut(15)">
+                    <img src="Team/Batch 2021/Umang Raj.jpg" class="Team_Image">
+                    <h3>Umang Raj</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2021/Krishan Kant.jpg" class="Team_Image">
-                <h3>Krishan Kant</h3>
-                <p>Mechanical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 16)" onmouseout="BubblyOut(16)">
+                    <img src="Team/Batch 2021/Krishan Kant.jpg" class="Team_Image">
+                    <h3>Krishan Kant</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Tuhinanshu Modgil.jpg" class="Team_Image">
-                <h3>Tuhinanshu Modgil</h3>
-                <p>Chemical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 17)" onmouseout="BubblyOut(17)">
+                    <img src="Team/Batch 2021/Tuhinanshu Modgil.jpg" class="Team_Image">
+                    <h3>Tuhinanshu Modgil</h3>
+                    <p>Chemical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>	
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Prince Gupta.jpg" class="Team_Image">
-                <h3>Prince Gupta</h3>
-                <p>Metallury and Materials Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 18)" onmouseout="BubblyOut(18)">
+                    <img src="Team/Batch 2021/Prince Gupta.jpg" class="Team_Image">
+                    <h3>Prince Gupta</h3>
+                    <p>Metallury and Materials Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2021/Aabhas Agarwal.jpg" class="Team_Image">
-                <h3>Aabhas Aggarwal</h3>
-                <p>Civil Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 19)" onmouseout="BubblyOut(19)">
+                    <img src="Team/Batch 2021/Aabhas Agarwal.jpg" class="Team_Image">
+                    <h3>Aabhas Aggarwal</h3>
+                    <p>Civil Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <h1 class="display-5" style="margin-top: 50px;">Batch 2020</h1>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2020/Akshat Toolaj Sinha.jpg" class="Team_Image">
-                <h3>Akshat Toolaj Sinha</h3>
-                <p>Computer Science and Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 20)" onmouseout="BubblyOut(20)">
+                    <img src="Team/Batch 2020/Akshat Toolaj Sinha.jpg" class="Team_Image">
+                    <h3>Akshat Toolaj Sinha</h3>
+                    <p>Computer Science and Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Ojassvi Kumar.jpg" class="Team_Image">
-                <h3>Ojassvi Kumar</h3>
-                <p>Computer Science and Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 21)" onmouseout="BubblyOut(21)">
+                    <img src="Team/Batch 2020/Ojassvi Kumar.jpg" class="Team_Image">
+                    <h3>Ojassvi Kumar</h3>
+                    <p>Computer Science and Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Aditya Jain.jpg" class="Team_Image">
-                <h3>Aditya Jain</h3>
-                <p>Mathematics and Computing</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 22)" onmouseout="BubblyOut(22)">
+                    <img src="Team/Batch 2020/Aditya Jain.jpg" class="Team_Image">
+                    <h3>Aditya Jain</h3>
+                    <p>Mathematics and Computing</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>	
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Vedansh.png" class="Team_Image">
-                <h3>Vedansh</h3>
-                <p>Electrical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 23)" onmouseout="BubblyOut(23)">
+                    <img src="Team/Batch 2020/Vedansh.png" class="Team_Image">
+                    <h3>Vedansh</h3>
+                    <p>Electrical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2020/Apeksha.jpg" class="Team_Image">
-                <h3>Apeksha</h3>
-                <p>Mechanical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 24)" onmouseout="BubblyOut(24)">
+                    <img src="Team/Batch 2020/Apeksha.jpg" class="Team_Image">
+                    <h3>Apeksha</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Vaidehi Patidar.jpg" class="Team_Image">
-                <h3>Vaidehi Patider</h3>
-                <p>Chemical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 25)" onmouseout="BubblyOut(25)">
+                    <img src="Team/Batch 2020/Vaidehi Patidar.jpg" class="Team_Image">
+                    <h3>Vaidehi Patider</h3>
+                    <p>Chemical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Himanshu Parganiha.jpg" class="Team_Image">
-                <h3>Himanshu Parganiha</h3>
-                <p>Metallury and Materials Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 26)" onmouseout="BubblyOut(26)">
+                    <img src="Team/Batch 2020/Himanshu Parganiha.jpg" class="Team_Image">
+                    <h3>Himanshu Parganiha</h3>
+                    <p>Metallury and Materials Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2020/Chinmay Aggarwal.jpeg" class="Team_Image">
-                <h3>Chinmay Aggarwal</h3>
-                <p>Civil Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 27)" onmouseout="BubblyOut(27)">
+                    <img src="Team/Batch 2020/Chinmay Aggarwal.jpeg" class="Team_Image">
+                    <h3>Chinmay Aggarwal</h3>
+                    <p>Civil Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <h1 class="display-5" style="margin-top: 50px;">Batch 2019</h1>
         <div class="row">
             <div class="col my-4">
-                <img src="Team/Batch 2019/Sagalpreet Singh.jpg" class="Team_Image">
-                <h3>Sagalpreet Singh</h3>
-                <p>Computer Science and Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
-            </div>
-        </div>
-        <div class="row">
-            <div class="col my-4">
-                <img src="Team/Batch 2019/Hardik Rana.jpg" class="Team_Image">
-                <h3>Hardik Rana</h3>
-                <p>Chemical Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>	
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 28)" onmouseout="BubblyOut(28)">
+                    <img src="Team/Batch 2019/Sagalpreet Singh.jpg" class="Team_Image">
+                    <h3>Sagalpreet Singh</h3>
+                    <p>Computer Science and Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col my-4">
-                <img src="Team/Batch 2019/Kanha Singhania.jpg" class="Team_Image">
-                <h3>Kanha Singhania</h3>
-                <p>Civil Engineering</p>
-                <ul class="social">
-                    <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
-                    <li><a href="#" class="fab fa-whatsapp whatsapp"></a></li>
-                    <li><a href="#" class="fa fa-envelope mail"></a></li>
-                    <li><a href="#" class="fa fa-phone phone"></a></li>
-                </ul>
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 29)" onmouseout="BubblyOut(29)">
+                    <img src="Team/Batch 2019/Hardik Rana.jpg" class="Team_Image">
+                    <h3>Hardik Rana</h3>
+                    <p>Chemical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 30)" onmouseout="BubblyOut(30)">
+                    <img src="Team/Batch 2019/Kanha Singhania.jpg" class="Team_Image">
+                    <h3>Kanha Singhania</h3>
+                    <p>Civil Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card-Team"  onmousemove="BubblyFunc(event, 31)" onmouseout="BubblyOut(31)">
+                    <img src="Team/Batch 2019/Shrabanti Halder .jpg" class="Team_Image">
+                    <h3>Shrabanti Halder</h3>
+                    <p>Mechanical Engineering</p>
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-linkedin-in linked-in"></a></li>
+                        
+                        <li><a href="#" class="fa fa-envelope mail"></a></li>
+                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
