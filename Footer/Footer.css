@@ -109,4 +109,7 @@ ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: cent
     #contants {
         margin-left: 100px;
     }
+    .Footer_foot {
+        font-size: 10px;
+    }
 }
