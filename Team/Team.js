@@ -14,7 +14,7 @@ function BubblyFunc(e, n) {
 function BubblyOut(n) {
     card[n].style.transform = "";
 }
-$(window).load(function(){
+window.addEventListener("load", (event) => {
     // PAGE IS FULLY LOADED  
     // FADE OUT YOUR OVERLAYING DIV
     alert("UY");
