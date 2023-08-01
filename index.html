@@ -25,10 +25,6 @@
     <title>Board of Academic Affairs, Indian Institute of Technology, Ropar</title>
 </head>
 <body>
-     <div class="text-center" id="overlay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 3; background-color:white;background-color: rgb(255, 255, 255, 0.8); backdrop-filter: blur(6px);">
-        <div class="spinner-grow" role="status" style="position:absolute; top:50%;">
-        </div>
-     </div>
     <div id="Header_div"></div>
     <!--SlideShow-->
     <div class="Slideshow">
@@ -48,10 +44,12 @@
       <a class="next_Slide" onclick="Slides(1)">❯</a>
     </div>
 
+    <H1 class="Message_Head" id="Acad_Head">About Academic Affairs Council</H1>
+    <hr style="margin: auto; width: 90%; border: none; height: 5px; color:black; background: #000000;">
     <div class="Main_Body">
       <div class="Messages_Section" id="About_Acad_Affairs_Section">
         <div class="Message_Text_Section" id="About_Acad_Affairs">
-          <H1 class="Message_Head" id="Acad_Head">About Academic Affairs Council</H1>
+          
           <p class="Message_Text" id="Acad_Text">The Board of Academic Affairs is a committee of faculty members and student
             representatives that oversees the academic policies and programs of the college. The board is 
             responsible for ensuring the quality and relevance of the curriculum, approving new courses
@@ -62,11 +60,43 @@
                 skills and knowledge, and achieve their educational goals.</p>
         </div>
       </div>
-      
+
+      <H1 class="Message_Head" id="BOAA_Head">Message from Dean UG
+      </H1>
+      <hr style="margin: auto; width: 90%; border: none; height: 5px; color:black; background: #000000;">
       <div class="Messages_Section">
+        <div class="Message_Images" id="Leadership_Summit_Images" style="margin-top: -10px; margin-left: 50px;">         
+          <div id="Img_Col_1" style="text-align: center;">
+            <img src="Jitendra Prasad.JPG" id="Msg_Img_1" style="width: 400px; height: auto; border-radius: 50%;">
+          </div>
+          <div id="Img_Col_2">
+            <h3>Dr. Jitendra Prasad<br>Dean UG</h3>
+          </div>
+        </div> 
         <div class="Message_Text_Section"  id="BOAA_Message">
-          <H1 class="Message_Head" id="BOAA_Head">Message from General Secretary BOAA
-          </H1>
+          
+          <p class="Message_Text">It is my pleasure to welcome you all here!<br>
+            The Board of Academic Affairs (BoAA) is a part of the formal student government called Student Council at IIT Ropar. The board consists of representatives from all departments and all batches. BoAA is headed by a General Secretary, who is a member of the Academic Committee for Undergraduate Studies (ACUGS) and the Senate.<br>            
+            As the name suggests, BoAA deals with the academic affairs and I, as an Associate Dean of Undergraduate Studies, work closely with the board, through its General Secretary, to make academic programs and related policies better and better. I encourage you to interact with the Class / Batch Representatives and the General Secretary, and let me know through them if I can do anything to make your learning experience even better.<br>
+            My best wishes for your knowledge, skills and positive attitude gained during your academic journey at IIT Ropar!
+          </p>
+        </div>         
+      </div>
+      
+      <H1 class="Message_Head" id="BOAA_Head">Message from General Secretary BOAA
+      </H1>
+      <hr style="margin: auto; width: 90%; border: none; height: 5px; color:black; background: #000000;">
+      <div class="Messages_Section">
+        <div class="Message_Images" id="Leadership_Summit_Images" style="margin-top: -10px; margin-left: 50px;">         
+          <div id="Img_Col_1" style="text-align: center;">
+            <img src="Team/Batch 2021/Prince Gupta.jpg" id="Msg_Img_1" style="width: 400px; height: auto; border-radius: 50%;">
+          </div>
+          <div id="Img_Col_2">
+            <h3>Prince Gupta<br>General Secretory of Academic Affairs</h3>
+          </div>
+        </div> 
+        <div class="Message_Text_Section"  id="BOAA_Message">
+          
           <p class="Message_Text">Transitioning from school to college can be a daunting experience for many 
             students. You may feel anxious about the academic expectations, the unfamiliar environment, and the
             new challenges that await you. However, you should not let these fears stop you from exploring the
@@ -79,30 +109,24 @@
                   many resources and support systems available to help you along the way. College is what you
                     make of it, so make the most of it!
           </p>
-        </div>
-        <div class="Message_Images" id="Leadership_Summit_Images" style="margin-top: 50px;">
-          <div id="Img_Col_1" style="text-align: center;">
-            <img src="Team/Batch 2021/Prince Gupta.jpg" id="Msg_Img_1" style="width: 400px; height: auto; border-radius: 50%;">
-          </div>
-          <div id="Img_Col_2">
-            <h3>Prince Gupta<br>General Secretory of Academic Affairs</h3>
-          </div>
-        </div>  
+        </div>         
       </div>
       
+      <H1 class="Message_Head">Leadership Summit
+      </H1>
+      <hr style="margin: auto; width: 90%; border: none; height: 5px; color:black; background: #000000;">
       <div class="Messages_Section" id="Leadership_Summit">
         <div class="Message_Text_Section">
-          <H1 class="Message_Head">Leadership Summit
-          </H1>
-          <p class="Message_Text" id="Leadership_Summit_Text">The Leadership Summit is an annual event hosted by IIT Ropar to address 
+          
+          <p class="Message_Text" id="Leadership_Summit_Text">The Leadership Summit is an event hosted by IIT Ropar to address 
             some of the major challenges and opportunities in the engineering field. The summit brings 
             together students, faculty, alumni, industry experts and policymakers to exchange ideas, share
             experiences and collaborate on solutions.. The main objectives of the last leadership summit were:<br><br></p>
-            <div class="bullets"><p style="font-size:20px;" id="bullets_text">&#x2022;Strengthen the bond between undergraduate (UG) and postgraduate (PG) students by 
+            <div class="bullets"><p class="Message_Text" style="font-size:20px;" id="bullets_text">&#x2022;Strengthen the bond between undergraduate (UG) and postgraduate (PG) students by 
             facilitating mentorship, guidance and interdisciplinary projects.<br></p>
-              <p style="font-size:20px;" id="bullets_text">&#x2022;Promote the core industry and its benefits to the students and employers by highlighting 
+              <p class="Message_Text" style="font-size:20px;" id="bullets_text">&#x2022;Promote the core industry and its benefits to the students and employers by highlighting 
             the opportunities, incentives and facilities available in this sector.<br></p>
-            <p style="font-size:20px;" id="bullets_text">&#x2022;Re-establish the culture of innovation, creativity and leadership among the students and 
+            <p class="Message_Text" style="font-size:20px;" id="bullets_text">&#x2022;Re-establish the culture of innovation, creativity and leadership among the students and 
             faculty by providing a platform for showcasing their achievements and initiatives.</p></div><br>
             <p class="Message_Text" id="Leadership_Summit_Closing_Text">The summit aims to create not just engineers, but future leaders of our nation
           </p>
@@ -119,10 +143,12 @@
         </div>
       </div>
       
-      <div class="Messages_Section">
-        <div class="Message_Text_Section" id="Convo_Section">
-          <H1 class="Message_Head">Convocation
-          </H1>
+      <H1 class="Message_Head">Convocation
+      </H1>
+      <hr style="margin: auto; width: 90%; border: none; height: 5px; color:black; background: #000000;">
+      <div class="Messages_Section" id="Convo_Section">
+        <div class="Message_Text_Section" id="Convo_Section_Text">
+          
           <p class="Message_Text">The convocation is an annual event where the students of IIT Ropar receive
             their degrees and medals from the chief guest, the director and the chairman of the institute. 
             It is a celebration of their academic achievements and a farewell to their alma mater. The 
