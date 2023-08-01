@@ -6,9 +6,7 @@
     margin: 0;
     padding: 0;
   }
- body {
-     overflow-y: hidden;
- }
+ 
 
   /*Slide Show*/
   .Slideshow {
@@ -76,8 +74,6 @@
     font-family: Arial, Helvetica, sans-serif;
     scale: 0.5;
     transition: all 1s;
-    display: flex;
-    justify-content: space-between;
   }
   .Messages_Section.visible {
     scale: 1;
@@ -87,8 +83,8 @@
     margin-top: 20px;
     background-color: transparent;
     text-align: left;
-    margin-bottom: 40px;
-    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 5%; width: 90%; margin-top: 100px;
   }
   #About_Acad_Affairs_Section {
     scale: 1;
@@ -105,11 +101,20 @@
   #BOAA_Message {
     width: 90%;
   }
-  #Convo_Section {
+  #Leadership_Summit {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Convo_Section_Text {
     width: 90%;
   }
+  #Convo_Section {
+    width: 90%;    
+    display: flex;
+    justify-content: space-between;
+  }
   .Message_Text_Section {
-    width: 50%;
+    width: 100%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -131,7 +136,7 @@
   .Message_Images {
     margin-top: 200px;
     display: inline-block;
-    width: 38%;
+    width: 80%;
     margin-right: 40px;
   }
   #Msg_Img_1 {
@@ -166,7 +171,7 @@
     width: 100%;
   }
   #Convocation_Images {
-    margin-top: 120px;
+    margin-top: 10px;
   }
 
 @media only screen and (max-width:1000px) {
