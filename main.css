@@ -109,7 +109,7 @@
     width: 90%;
   }
   #Convo_Section {
-    width: 90%;    
+    width: 100%;    
     display: flex;
     justify-content: space-between;
   }
@@ -197,7 +197,7 @@
   .Slide_Images {
     height: 500px;
   }
-    #Leadership_Summit {
+  #Leadership_Summit {
     display:block;
   }
   #Convo_Section {   
