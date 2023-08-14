@@ -1,5 +1,5 @@
 body {
-    overflow-y: hidden;
+	overflow-y: hidden;
 }
 
 .Team_Image {
@@ -44,10 +44,9 @@ display: inline-block;
     rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
     rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
 	margin-left: 5px;
-	width: auto; margin: auto;
+	width: 350px; margin: auto;
 	height: 500px;
 }
-
 .linked-in{background: #1C58A1;}
 .linked-in:hover{background: #fff;color:#1C58A1!important;}
 .whatsapp{background: #25d366;}
