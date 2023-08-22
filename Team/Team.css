@@ -56,3 +56,34 @@ display: inline-block;
 .phone{background-color: black;}
 .phone:hover{background: #fff;color: #000!important;}
 
+.modal {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.9);
+	transition: all 0.4s;
+	visibility: hidden;
+}
+.content {
+	position: absolute;
+	background: white;
+	width: 400px;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modal:target {
+	visibility: visible;
+	opacity: 1;
+}
+.box-close {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	color: #fe0606;
+	text-decoration: none;
+	font-size: 30px;
+	cursor: pointer;
+}
+li {
+	cursor: pointer;
+}
