@@ -33,6 +33,19 @@
    </div>
     <div id="Header_div"></div>
     <div class="container text-center" style="margin-top: 70px;">
+        <div id="popup-box" class="modal">
+            <div class="content">
+                <h1 style="color: black" id="Popup-Name">
+                    Name
+                </h1>
+                <b>
+                    <p id="Popup-Info" style="color: grey">Contact</p>
+                </b>
+                <a class="box-close" onclick="Contact_Box_Close()">
+                    ×
+                </a>
+            </div>
+        </div>
         <h1 class="display-4">Aacademic Year 2023-24</h1>
         <div class="row justify-content-center">
             <div class="col my-4">
@@ -41,8 +54,8 @@
                     <h3>Prince Gupta</h3>
                     <p>General Secretary of Academic Affairs</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(0, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(0, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +68,8 @@
                     <h3>Priyanshi Vacchani</h3>
                     <p>Civil Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(1, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(1, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -66,8 +79,8 @@
                     <h3>Dikshant Parashar</h3>
                     <p>Chemical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(2, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(2, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -77,8 +90,8 @@
                     <h3>Ananya Sethi</h3>
                     <p>Computer Science and Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(3, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(3, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -90,8 +103,8 @@
                     <h3>Archit Goyal</h3>
                     <p>Electrical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(4, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(4, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -101,8 +114,8 @@
                     <h3>Priyanshi Shisodia</h3>
                     <p>Electrical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(5, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(5, 1)" class="fa fa-phone phone"></a></li>
                     </ul>                
                 </div>
             </div>
@@ -112,8 +125,8 @@
                     <h3>Mayank Sharma</h3>
                     <p>Engineering Physics</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(6, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(6, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -125,8 +138,8 @@
                     <h3>Nimish Sehgal</h3>
                     <p>Mathematics and Computing</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(7, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(7, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -136,8 +149,8 @@
                     <h3>Aditi Garg</h3>
                     <p>Mechanical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(8, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(8, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -147,8 +160,8 @@
                     <h3>Aditya Yadav</h3>
                     <p>Mechanical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(9, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(9, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -160,8 +173,8 @@
                     <h3>Kavyansh Dhakad</h3>
                     <p>Metallury and Materials Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(10, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(10, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>            
@@ -174,8 +187,8 @@
                     <h3>Aabhas Aggarwal</h3>
                     <p>Civil Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(11, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(11, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -185,8 +198,8 @@
                     <h3>Tuhinanshu Modgil</h3>
                     <p>Chemical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(12, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(12, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>	
             </div>
@@ -196,8 +209,8 @@
                     <h3>Edgar Aditya Thorpe</h3>
                     <p>Computer Science and Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(13, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(13, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -209,8 +222,8 @@
                     <h3>Harshit</h3>
                     <p>Electrical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(14, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(14, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -220,8 +233,8 @@
                     <h3>Rudra Kumar Chourasia</h3>
                     <p>Electrical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(15, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(15, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -231,8 +244,8 @@
                     <h3>Akshit Singh</h3>
                     <p>Mathematics and Computing</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(16, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(16, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -244,8 +257,8 @@
                     <h3>Devanshi Sawhney</h3>
                     <p>Mechanical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(17, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(17, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -256,8 +269,8 @@
                     <h3>Gunjeet Narkhede</h3>
                     <p>Metallury and Materials Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(18, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(18, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -270,8 +283,8 @@
                     <h3>Priyanshu Thathera</h3>
                     <p>Civil Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(19, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(19, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -281,8 +294,8 @@
                     <h3>Vaidehi Patidar</h3>
                     <p>Chemical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(20, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(20, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -292,8 +305,8 @@
                     <h3>Akshat Toolaj Sinha</h3>
                     <p>Computer Science and Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(21, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(21, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -305,8 +318,8 @@
                     <h3>Ojassvi Kumar</h3>
                     <p>Computer Science and Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(22, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(22, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -316,8 +329,8 @@
                     <h3>Sri Amlan Anshu Mohanty</h3>
                     <p>Electrical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(23, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(23, 1)" class="fa fa-phone phone"></a></li>
                     </ul>
                 </div>
             </div>
@@ -327,8 +340,8 @@
                     <h3>Aditya Jain</h3>
                     <p>Mathematics and Computing</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(24, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(24, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -340,8 +353,8 @@
                     <h3>Akshit Kumar</h3>
                     <p>Mechanical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(25, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(25, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -351,8 +364,8 @@
                     <h3>Shraman Maiti</h3>
                     <p>Mechanical Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(26, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(26, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div>
@@ -362,8 +375,8 @@
                     <h3>Himanshu Parganiha</h3>
                     <p>Metallury and Materials Engineering</p>
                     <ul class="social">
-                        <li><a href="#" class="fa fa-envelope mail"></a></li>
-                        <li><a href="#" class="fa fa-phone phone"></a></li>
+                        <li><a onclick="Contact_Func(27, 0)" class="fa fa-envelope mail"></a></li>
+                        <li><a onclick="Contact_Func(27, 1)" class="fa fa-phone phone"></a></li>
                     </ul>	
                 </div>
             </div> 
